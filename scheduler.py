@@ -1,27 +1,5 @@
 # 📁 reminder.json (file lưu nhắc việc nâng cao)
-# Mẫu dữ liệu:
-[
-  {
-    "id": 1,
-    "text": "Uống nghệ mật ong",
-    "time": "06:30",
-    "repeat": "daily",
-    "repeat_count": null,
-    "expires": null,
-    "days_of_week": null,
-    "status": "active"
-  },
-  {
-    "id": 2,
-    "text": "Review tuần",
-    "time": "20:00",
-    "repeat": "weekly",
-    "repeat_count": null,
-    "expires": null,
-    "days_of_week": ["sunday"],
-    "status": "active"
-  }
-]
+
 
 # 📁 scheduler.py
 import json
@@ -29,8 +7,8 @@ import time
 import requests
 from datetime import datetime
 
-BOT_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN_HERE'
-CHAT_ID = YOUR_CHAT_ID_HERE  # ví dụ: 123456789
+BOT_TOKEN = '7774963059:AAH5HNjaLENJpQyoCgDyvqq1MwWJ2RMLNeM'
+CHAT_ID = 5582140961  # ví dụ: 123456789
 REMINDER_FILE = 'reminder.json'
 
 def send_telegram_message(text):
