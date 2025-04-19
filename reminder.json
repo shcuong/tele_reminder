@@ -1,0 +1,24 @@
+# 📁 reminder.json (file lưu nhắc việc nâng cao)
+# Mẫu dữ liệu:
+[
+  {
+    "id": 1,
+    "text": "Uống nghệ mật ong",
+    "time": "06:30",
+    "repeat": "daily",
+    "repeat_count": null,
+    "expires": null,
+    "days_of_week": null,
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "text": "Review tuần",
+    "time": "20:00",
+    "repeat": "weekly",
+    "repeat_count": null,
+    "expires": null,
+    "days_of_week": ["sunday"],
+    "status": "active"
+  }
+]
