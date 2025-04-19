@@ -1,50 +1,3 @@
-# 📁 reminder.json (file lưu nhắc việc nâng cao)
-# Mẫu dữ liệu:
-[
-  {
-    "id": 1,
-    "text": "Uống nghệ mật ong",
-    "time": "06:30",
-    "repeat": "daily",
-    "repeat_count": null,
-    "expires": null,
-    "days_of_week": null,
-    "status": "active"
-  },
-  {
-    "id": 2,
-    "text": "Review tuần",
-    "time": "20:00",
-    "repeat": "weekly",
-    "repeat_count": null,
-    "expires": null,
-    "days_of_week": ["sunday"],
-    "status": "active"
-  }
-]
-
-# 📁 scheduler.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 reminder_parser.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 add_reminder.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 delete_reminder.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 edit_reminder.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 list_reminders.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 reminder_manager.py
-# <... (không đổi - giữ nguyên như trước) ...>
-
-# 📁 reminder_web.py
 from flask import Flask, request, render_template_string, redirect, jsonify
 from add_reminder import add_reminder_from_text
 from delete_reminder import delete_by_id
@@ -153,4 +106,4 @@ def api_reminders():
     return jsonify(load_reminders())
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5000)
