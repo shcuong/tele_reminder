@@ -24,10 +24,10 @@
 ]
 
 # 📁 scheduler.py
-<... (không đổi - giữ nguyên như trước) ...>
+
 
 # 📁 reminder_parser.py
-<... (không đổi - giữ nguyên như trước) ...>
+
 
 # 📁 add_reminder.py
 # Nhận đầu vào từ GPT (dạng ngôn ngữ tự nhiên), phân tích và lưu vào reminder.json
