@@ -1,5 +1,5 @@
 import json
-from reminder_parser import parse_reminder
+from reminder_parser import parse_natural_reminder
 
 def add_reminder_from_text(text):
     try:
@@ -9,7 +9,7 @@ def add_reminder_from_text(text):
         data = []
 
     new_id = max([r["id"] for r in data], default=0) + 1
-    parsed = parse_reminder(text)
+    parsed = parse_natural_reminder(text)
 
     reminder = {
         "id": new_id,
